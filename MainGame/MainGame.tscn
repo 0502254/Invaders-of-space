@@ -39,14 +39,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="CurrentScoreLabel" type="Label" parent="HUD"]
+[node name="Current Score" type="Label" parent="HUD"]
 margin_left = 4.0
 margin_top = 13.0
 margin_right = 90.0
 margin_bottom = 27.0
 text = "Current Score"
 
-[node name="CurrentScore" type="Label" parent="HUD"]
+[node name="0" type="Label" parent="HUD"]
 margin_left = 94.0
 margin_top = 13.0
 margin_right = 102.0
