@@ -4,8 +4,8 @@ var bulletInstanceCount = 0 # Keeps track of how many bullet instances are curre
 var enemyBulletInstanceCount = 0
 
 var scoringInformation = {
-	"currentScore":0,
+	"currentScore": 0,
 	"currentPlayer": "User",
-	"highScore": 0,
+	"highScores": 0,
 	"highScorePlayersName" : "Winner"
 }

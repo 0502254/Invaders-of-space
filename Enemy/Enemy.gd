@@ -1,16 +1,17 @@
 extends KinematicBody2D
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	$Area2D.connect("area_entered", self, "colliding")
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _colliding(area):
+	if area.is_in_group("right"):
+		#print("enemies collide right")
+		get_parent().global_position.y += 10
+		get_parent().speed = get_parent().speed * -1
+	if area.is_in_group("left"):
+		#print("enemies collide left")
+		get_parent().global_position.y += 10
+		get_parent().speed = get_parent().speed * -1
