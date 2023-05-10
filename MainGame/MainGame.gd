@@ -16,4 +16,4 @@ func _ready():
 		print(currentTimer)
 	print("Bad Lol Try Again")
 	# Load the main menu again
-	get_tree().change_scene("res://Menu/Menu.tcsn")
+	

@@ -14,7 +14,7 @@ func _colliding(area):
 		get_parent().global_position.y += 10
 		get_parent().speed = -200
 	if area.is_in_group("left"):
-		#print("emenies collide left")
+		#print("emenies collide left")skeleton
 		get_parent().global_position.y += 10
 		get_parent().speed = 200
 
