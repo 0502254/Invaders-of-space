@@ -54,12 +54,3 @@ func _input(event):
 		get_node("weapon 3").set_opacity(0)
 		get_node("weapon 4").set_opacoty(1)
 
-
-const BULLET_SCENE = preload("res://Bullet.tscn")
-
-var aim_direction + Vector2.RIGHT
-
-func _input(event):
-	if event is InputEventKey and event.pressed:
-		if event.scancode == KEY_SPACE:
-			shoot()
