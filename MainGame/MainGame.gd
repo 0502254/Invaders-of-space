@@ -14,6 +14,6 @@ func _ready():
 		$HUD/CurrentScore.text = str (GlobalVariables.scoringInformation["currentScore"])
 		currentTimer = currentTimer - 1
 		print(currentTimer)
-	print("Bad Lol Try Again")
+	print("Bad Lol, Try Again")
 	# Load the main menu again
 	
