@@ -25,4 +25,7 @@ func _physics_process(delta):
 	if Input.is_action_pressed("ui_down"):
 		move_and_collide(Vector2(0, movement_speed * delta))
 
-
+func reduceHealth():
+	health -= 1
+	if health == 0:
+		get_tree().change_scene("res://Menu/Menu.tscn")
