@@ -1,6 +1,7 @@
 extends KinematicBody2D
 
 var movement_speed = 200
+export (int) var healt = 1
 var bulletSource = preload("res://Bullet/Bullet.tscn")
 # Called when the node enters the scene tree for the first time.
 func ready():
