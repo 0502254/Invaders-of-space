@@ -15,3 +15,11 @@ func _physics_process(delta):
 			GlobalVariables.scoringInformation["currentScore"] +=10
 		queue_free()
 		GlobalVariables.bulletInstanceCount -= 1
+
+var bllets_num
+
+func onareabodyentered(body):
+	if area isingroup("player"):
+	bullets_num += 1
+	
+	text = bullets_num

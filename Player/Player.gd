@@ -1,12 +1,13 @@
 extends KinematicBody2D
 
 var movement_speed = 200
-export (int) var healt = 1
+export (int) var health = 1
 var bulletSource = preload("res://Bullet/Bullet.tscn")
 # Called when the node enters the scene tree for the first time.
 func ready():
 	set_process(true)
 	set_physics_process(true)
+	GlobalVariables.Player = self
 	
 func _process(delta):
 	if Input.is_action_just_pressed("fire"):
