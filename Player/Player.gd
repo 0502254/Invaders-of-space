@@ -30,4 +30,5 @@ func _physics_process(delta):
 func reduceHealth():
 	health -= 1
 	if health == 0:
+		GlobalVariables.Player = null
 		get_tree().change_scene("res://Menu/Menu.tscn")

@@ -7,6 +7,8 @@ func _ready():
 	set_physics_process(true)
 
 func _physics_process(delta):
+	if GlobalVariables.Player == null:
+		queue_free()
 	var collidedObject = move_and_collide(Vector2(0, -speed*delta))
 	if (collidedObject):
 		print(collidedObject.collider.name)
@@ -16,10 +18,3 @@ func _physics_process(delta):
 		queue_free()
 		GlobalVariables.bulletInstanceCount -= 1
 
-var bllets_num
-
-func onareabodyentered(body):
-	if area isingroup("player"):
-	bullets_num += 1
-	
-	text = bullets_num

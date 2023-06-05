@@ -14,10 +14,10 @@ extents = Vector2( 20.9622, 380.576 )
 extents = Vector2( 662.058, 10 )
 
 [node name="SpaceInvaders" type="Control"]
-margin_left = -0.768188
-margin_top = 1.23187
-margin_right = 1279.23
-margin_bottom = 721.232
+margin_left = 0.47406
+margin_top = -3.42279
+margin_right = 1280.48
+margin_bottom = 716.577
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -25,8 +25,10 @@ __meta__ = {
 countDownMax = 50
 
 [node name="HUD" type="HBoxContainer" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
+margin_left = 27.3848
+margin_top = 0.317871
+margin_right = 133.385
+margin_bottom = 40.3179
 script = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -52,6 +54,15 @@ margin_top = 13.0
 margin_right = 102.0
 margin_bottom = 27.0
 text = "0"
+
+[node name="AmmoCounter" type="Label" parent="."]
+margin_left = 1078.38
+margin_top = 647.82
+margin_right = 1215.38
+margin_bottom = 697.82
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Border_Left" type="Area2D" parent="." groups=[
 "left",
@@ -82,7 +93,7 @@ position = Vector2( 646.934, -31.955 )
 [node name="TopCollider" type="CollisionShape2D" parent="Border_Top" groups=[
 "top",
 ]]
-position = Vector2( 0, 1 )
+position = Vector2( -1.58667, 8.93336 )
 shape = SubResource( 2 )
 
 [node name="Border_Bottom" type="KinematicBody2D" parent="." groups=[

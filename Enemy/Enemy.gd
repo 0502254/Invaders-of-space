@@ -31,3 +31,4 @@ func _process(delta):
 		
 		bulletInstance.position = Vector2(global_position.x, global_position.y+20)
 		get_tree().get_root().add_child(bulletInstance)
+
