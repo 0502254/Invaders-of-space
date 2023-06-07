@@ -32,3 +32,5 @@ func reduceHealth():
 	if health == 0:
 		GlobalVariables.Player = null
 		get_tree().change_scene("res://Menu/Menu.tscn")
+
+
