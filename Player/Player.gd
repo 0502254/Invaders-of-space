@@ -4,15 +4,17 @@ var movement_speed = 200
 
 var bulletSource = preload("res://Bullet/Bullet.tscn")
 # Called when the node enters the scene tree for the first time.
-func ready():
+func _ready():
 	set_process(true)
 	set_physics_process(true)
 	GlobalVariables.Player = self
+
+	
 # player shooting process
 func _process(delta):
 	if Input.is_action_just_pressed("fire"):
 		var bulletInstance = bulletSource.instance()
-		bulletInstance.position = Vector2(position.x, position.y-20)
+		bulletInstance.position = Vector2(position.x, position.y-40)
 		get_tree().get_root().add_child(bulletInstance)
 # Player movement process
 func _physics_process(delta):

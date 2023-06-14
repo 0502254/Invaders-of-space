@@ -7,7 +7,9 @@ func _ready():
 	set_physics_process(true)
 # Player points and scoring system
 func _physics_process(delta):
+	
 	if GlobalVariables.Player == null:
+		print(GlobalVariables.Player)
 		queue_free()
 	var collidedObject = move_and_collide(Vector2(0, -speed*delta))
 	if (collidedObject):
