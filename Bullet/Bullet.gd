@@ -5,7 +5,7 @@ var speed = 500
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	set_physics_process(true)
-
+# Player points and scoring system
 func _physics_process(delta):
 	if GlobalVariables.Player == null:
 		queue_free()

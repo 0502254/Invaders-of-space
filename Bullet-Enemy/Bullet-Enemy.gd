@@ -7,7 +7,7 @@ func _ready():
 	GlobalVariables.enemyBulletInstanceCount += 1
 	set_physics_process(true)
 
-
+# 
 func _physics_process(delta):
 	if GlobalVariables.Player == null:
 		queue_free()
@@ -20,10 +20,3 @@ func _physics_process(delta):
 		else:
 			queue_free()
 			GlobalVariables.enemyBulletInstanceCount -= 1
-			if "player" in collidedObject.collider.name:
-				collidedObject.collider.reduceHealth()
-				pass
-			else:
-				
-				print("Enemy Bullets: ", GlobalVariables.enemyBulletInstanceCount)
-				
